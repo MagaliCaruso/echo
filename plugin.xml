@@ -20,15 +20,15 @@
 
 	<license>Apache 2.0 License</license>
 
-	<!-- a single file, to be copied in the root directory -->
-	<asset src="www/foo.js" target="js/foo.js" />
+	<!-- a single file, to be copied in the root directory 
+	<asset src="www/Echo.java" target="js/foo.js" />-->s
 
 	<platform name="android">
     <!-- android-specific elements -->
 	</platform>
 
 	<!-- android src: Location of the file relative to plugin.xml target-dir: A directory into which the files should be copied, relative to the root of the Cordova project-->
-	<source-file src="src/android/Foo.java" target-dir="src/com/alunny/foo" />
+	<source-file src="src/calendar.js" target-dir="www/js/" />
 
 </plugin>
 
