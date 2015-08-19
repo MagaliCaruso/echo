@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.alunny.foo"
+    version="1.0.2">
+
+    <engines>
+	    <engine name="cordova" version="1.7.0" />
+	    <engine name="cordova" version="1.8.1" />
+	    <engine name="worklight" version="1.0.0" />
+	</engines>
+
+	<name>Foo</name>
+
+	<description>Foo plugin description</description>
+
+	<author>Foo plugin description</author>
+
+	<keywords>foo,bar</keywords>
+
+	<license>Apache 2.0 License</license>
+
+	<!-- a single file, to be copied in the root directory -->
+	<asset src="www/foo.js" target="js/foo.js" />
+
+	<platform name="android">
+    <!-- android-specific elements -->
+	</platform>
+
+	<!-- android src: Location of the file relative to plugin.xml target-dir: A directory into which the files should be copied, relative to the root of the Cordova project-->
+	<source-file src="src/android/Foo.java" target-dir="src/com/alunny/foo" />
+
+</plugin>
+
