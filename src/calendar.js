@@ -1,10 +1,16 @@
 
-/*angular.module('plugin', ['ngCordova', 'ionic'])
+angular.module('plugin', ['ngCordova', 'ionic'])
 
     .factory('calendar', function ($window, $ionicPlatform) {
 
+            window.echo = function(str, callback) {
+        cordova.exec(callback, function(err) {
+            callback('Nothing to echo.');
+        }, "Echo", "echo", [str]);
+    };
 
-        function createEvent(title, location, notes, startDate, endDate, successCallback, errorCallback) {
+
+        /*function createEvent(title, location, notes, startDate, endDate, successCallback, errorCallback) {
 
             ionic.Platform.ready(function(){
 
@@ -32,14 +38,9 @@
 
             return {
             createEvent: createEvent
-        };
+        };*/
 
     });       
-*/
 
 
-    window.echo = function(str, callback) {
-        cordova.exec(callback, function(err) {
-            callback('Nothing to echo.');
-        }, "Echo", "echo", [str]);
-    };
+
