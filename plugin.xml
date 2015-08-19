@@ -4,24 +4,18 @@
     id="com.echo"
     version="1.0.2">
 
-    <engines>
-	    <engine name="cordova" version="1.7.0" />
-	    <engine name="cordova" version="1.8.1" />
-	    <engine name="worklight" version="1.0.0" />
-	</engines>
-
 	<name>Foo</name>
-
 	<description>Foo plugin description</description>
-
 	<author>Foo plugin description</author>
-
 	<keywords>foo,bar</keywords>
-
 	<license>Apache 2.0 License</license>
 
-	<!-- a single file, to be copied in the root directory -->
-	<asset src="src/calendar.js" target="js/calendar.js" />
+	<!-- a single file, to be copied in the root directory 
+	<asset src="src/calendar.js" target="js/calendar.js" />-->
+	
+	<js-module src="src/calendar.js" name="Calendar">
+        <clobbers target="window.calendar" />
+    	</js-module>
 
 	<platform name="android">
     <!-- android-specific elements -->
