@@ -4,7 +4,7 @@
     id="org.apache.cordova.plugin"
     version="1.0.2">
 
-	<name>Foo</name>
+	<name>echo</name>
 	<description>Foo plugin description</description>
 	<author>Foo plugin description</author>
 	<keywords>foo,bar</keywords>
@@ -13,16 +13,16 @@
 	<!-- a single file, to be copied in the root directory 
 	<asset src="src/calendar.js" target="js/calendar.js" />-->
 	
-	<js-module src="src/calendar.js" name="Calendar">
-        <clobbers target="window.calendar" />
-    	</js-module>
+	<js-module src="src/echo.js" name="echo">
+        <clobbers target="echo" />
+    </js-module>
 
 	<platform name="android">
     <!-- android-specific elements -->
 	</platform>
 
 	<!-- android src: Location of the file relative to plugin.xml target-dir: A directory into which the files should be copied, relative to the root of the Cordova project-->
-	<source-file src="src/calendar.js" target-dir="www/js/" />
+	<source-file src="www/Echo.java" target-dir="plugins/com/apache/cordova/plugin" />
 
 </plugin>
 
