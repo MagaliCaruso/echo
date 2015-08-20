@@ -14,7 +14,8 @@
 	<asset src="src/calendar.js" target="js/calendar.js" />-->
 	
 	<js-module src="src/echo.js" name="echo">
-        <clobbers target="echo" />
+		<runs/>
+        <!--<clobbers target="echo" />-->
     </js-module>
 
 	<platform name="android">
