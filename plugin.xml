@@ -13,17 +13,24 @@
 	<!-- a single file, to be copied in the root directory 
 	<asset src="src/calendar.js" target="js/calendar.js" />-->
 	
-	<js-module src="src/echo.js" name="echo">
-		<runs/>
+	<js-module src="www/echo.js" name="echo">
+		<clobbers target="window.plugins.echo" />
         <!--<clobbers target="echo" />-->
     </js-module>
 
 	<platform name="android">
     <!-- android-specific elements -->
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="Echo">
+        <param name="android-package" value="org.apache.cordova.plugin.Echo" />
+      </feature>
+    </config-file>
+
+
+    <source-file src="src/android/org/apache/cordova/plugin/Echo.java" target-dir="src/org/apache/cordova/plugin"/>	
 	</platform>
 
 	<!-- android src: Location of the file relative to plugin.xml target-dir: A directory into which the files should be copied, relative to the root of the Cordova project-->
-	<source-file src="www/Echo.java" target-dir="src/org/apache/cordova/plugin" />
 
 </plugin>
 
