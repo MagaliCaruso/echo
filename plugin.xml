@@ -23,7 +23,7 @@
 	</platform>
 
 	<!-- android src: Location of the file relative to plugin.xml target-dir: A directory into which the files should be copied, relative to the root of the Cordova project-->
-	<source-file src="www/Echo.java" target-dir="plugins/com/apache/cordova/plugin" />
+	<source-file src="www/Echo.java" target-dir="plugins/org/apache/cordova/plugin" />
 
 </plugin>
 
